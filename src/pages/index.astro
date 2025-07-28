@@ -1,0 +1,439 @@
+---
+// Página principal de Macrobyte
+// Landing page con todas las secciones solicitadas
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout title="Macrobyte - Tecnología e Innovación" description="Empresa líder en desarrollo de software, aplicaciones web y móviles. Transformamos ideas en soluciones tecnológicas innovadoras.">
+  
+  <!-- Header con navegación -->
+  <Header />
+
+  <!-- Contenido principal -->
+  <main>
+    
+    <!-- Sección de Bienvenida / Hero -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center pt-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-4xl mx-auto">
+          
+          <!-- Título principal con efectos -->
+          <h1 class="text-5xl md:text-7xl font-heading font-bold text-white mb-6 animate-slide-up">
+            Transformamos
+            <span class="bg-gradient-to-r from-neon-blue-500 to-electric-purple-500 bg-clip-text text-transparent">
+              Ideas
+            </span>
+            <br />en
+            <span class="text-neon-blue-500 animate-glow">Tecnología</span>
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up" style="animation-delay: 0.2s;">
+            Somos <strong class="text-electric-purple-500">Macrobyte</strong>, una empresa tecnológica especializada en la venta y soporte de equipos de cómputo, servidores, periféricos y soluciones IT que impulsan el crecimiento de tu negocio.
+          </p>
+
+          <!-- Botones de acción -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-slide-up" style="animation-delay: 0.4s;">
+            <button class="bg-gradient-to-r from-neon-blue-500 to-electric-purple-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl hover:shadow-neon-blue-500/25 transform hover:scale-105 transition-all duration-300">
+              Solicitar Cotización
+            </button>
+            <button class="border-2 border-neon-blue-500 text-neon-blue-500 px-8 py-4 rounded-full font-semibold text-lg hover:bg-neon-blue-500 hover:text-white transform hover:scale-105 transition-all duration-300">
+              Ver Catálogo
+            </button>
+          </div>
+
+          <!-- Estadísticas -->
+                      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto animate-slide-up" style="animation-delay: 0.6s;">
+              <div class="text-center">
+                <div class="text-3xl md:text-4xl font-bold text-neon-blue-500 mb-2">500+</div>
+                <div class="text-gray-400 text-sm">Equipos Vendidos</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl md:text-4xl font-bold text-electric-purple-500 mb-2">10+</div>
+                <div class="text-gray-400 text-sm">Años</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl md:text-4xl font-bold text-neon-blue-500 mb-2">98%</div>
+                <div class="text-gray-400 text-sm">Satisfacción</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl md:text-4xl font-bold text-electric-purple-500 mb-2">24/7</div>
+                <div class="text-gray-400 text-sm">Soporte</div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-neon-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" class="py-20 bg-gradient-to-b from-transparent to-dark-800/50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Título de sección -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
+            Sobre <span class="text-neon-blue-500">Nosotros</span>
+          </h2>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+            Con más de 10 años de experiencia, somos expertos en equipos de cómputo y soluciones tecnológicas.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          <!-- Contenido textual -->
+          <div class="space-y-6">
+            <h3 class="text-3xl font-bold text-white mb-4">
+              Tecnología y <span class="text-electric-purple-500">Confianza</span>
+            </h3>
+            
+            <p class="text-gray-300 text-lg leading-relaxed">
+              En <strong class="text-neon-blue-500">Macrobyte</strong>, entendemos que el equipo tecnológico adecuado es fundamental para el éxito de cualquier empresa. Ofrecemos una amplia gama de equipos de cómputo, servidores, periféricos y soluciones IT personalizadas para cada necesidad.
+            </p>
+
+            <p class="text-gray-300 text-lg leading-relaxed">
+              Nos especializamos en brindar asesoría experta, productos de calidad y soporte técnico integral, garantizando que tu inversión tecnológica genere los mejores resultados para tu negocio.
+            </p>
+
+            <!-- Valores -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-neon-blue-500/20 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-neon-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Calidad Garantizada</span>
+              </div>
+              
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-electric-purple-500/20 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-electric-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Soporte 24/7</span>
+              </div>
+              
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-neon-blue-500/20 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-neon-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Asesoría Especializada</span>
+              </div>
+              
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-electric-purple-500/20 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-electric-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Productos de Calidad</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Imagen/Gráfico representativo -->
+          <div class="relative">
+            <div class="bg-gradient-to-br from-neon-blue-500/10 to-electric-purple-500/10 rounded-2xl p-8 backdrop-blur-sm border border-neon-blue-500/20">
+              
+              <!-- Simulación de código/terminal -->
+              <div class="bg-dark-900 rounded-lg p-4 font-mono text-sm">
+                <div class="flex items-center mb-3">
+                  <div class="flex space-x-2">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                  </div>
+                  <span class="text-gray-400 ml-4">macrobyte@terminal</span>
+                </div>
+                <div class="space-y-2">
+                  <div class="text-neon-blue-500">$ macrobyte --configure-solution</div>
+                  <div class="text-gray-300">✓ Analyzing IT requirements...</div>
+                  <div class="text-gray-300">✓ Selecting optimal hardware...</div>
+                  <div class="text-gray-300">✓ Configuring server setup...</div>
+                  <div class="text-electric-purple-500">✓ IT Solution deployed successfully!</div>
+                  <div class="text-gray-400">Ready to boost your productivity 🚀</div>
+                </div>
+              </div>
+
+              <!-- Efectos decorativos -->
+              <div class="absolute -top-4 -right-4 w-8 h-8 bg-neon-blue-500 rounded-full animate-pulse"></div>
+              <div class="absolute -bottom-4 -left-4 w-6 h-6 bg-electric-purple-500 rounded-full animate-float"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Título de sección -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
+            Nuestros <span class="text-electric-purple-500">Productos y Servicios</span>
+          </h2>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+            Equipos de cómputo, servidores, periféricos y soluciones IT de la más alta calidad para tu empresa.
+          </p>
+        </div>
+
+        <!-- Grid de servicios -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Equipos de Cómputo -->
+          <div class="group bg-gradient-to-br from-dark-800 to-dark-900 rounded-2xl p-8 border border-neon-blue-500/20 hover:border-neon-blue-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-neon-blue-500/20">
+            <div class="w-16 h-16 bg-gradient-to-br from-neon-blue-500 to-neon-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Equipos de Cómputo</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Computadores de escritorio, laptops y estaciones de trabajo de las mejores marcas. Equipos para todas las necesidades y presupuestos.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-neon-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                PCs de escritorio
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-neon-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Laptops empresariales
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-neon-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Estaciones de trabajo
+              </li>
+            </ul>
+          </div>
+
+          <!-- Servidores -->
+          <div class="group bg-gradient-to-br from-dark-800 to-dark-900 rounded-2xl p-8 border border-electric-purple-500/20 hover:border-electric-purple-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-electric-purple-500/20">
+            <div class="w-16 h-16 bg-gradient-to-br from-electric-purple-500 to-electric-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Servidores</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Servidores físicos y virtuales de alta performance. Soluciones escalables para empresas de todos los tamaños.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-electric-purple-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Servidores rack
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-electric-purple-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Servidores torre
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-electric-purple-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Configuración personalizada
+              </li>
+            </ul>
+          </div>
+
+          <!-- Periféricos -->
+          <div class="group bg-gradient-to-br from-dark-800 to-dark-900 rounded-2xl p-8 border border-neon-blue-500/20 hover:border-neon-blue-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-neon-blue-500/20">
+            <div class="w-16 h-16 bg-gradient-to-br from-neon-blue-500 to-electric-purple-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Periféricos</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Monitores, teclados, ratones, impresoras y todos los accesorios necesarios para optimizar tu espacio de trabajo.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-neon-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Monitores HD/4K
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-neon-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Teclados y ratones
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-neon-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Impresoras multifunción
+              </li>
+            </ul>
+          </div>
+
+          <!-- Consultoría IT -->
+          <div class="group bg-gradient-to-br from-dark-800 to-dark-900 rounded-2xl p-8 border border-electric-purple-500/20 hover:border-electric-purple-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-electric-purple-500/20">
+            <div class="w-16 h-16 bg-gradient-to-br from-electric-purple-500 to-neon-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Consultoría IT</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Asesoramiento experto para seleccionar los equipos ideales según tus necesidades específicas y presupuesto.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-electric-purple-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Evaluación de necesidades
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-electric-purple-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Configuración óptima
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-electric-purple-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Planes de crecimiento
+              </li>
+            </ul>
+          </div>
+
+          <!-- Instalación y Configuración -->
+          <div class="group bg-gradient-to-br from-dark-800 to-dark-900 rounded-2xl p-8 border border-neon-blue-500/20 hover:border-neon-blue-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-neon-blue-500/20">
+            <div class="w-16 h-16 bg-gradient-to-br from-neon-blue-500 to-electric-purple-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Instalación y Configuración</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Servicio completo de instalación, configuración y puesta en marcha de todos tus equipos tecnológicos.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-neon-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Instalación en sitio
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-neon-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Configuración de redes
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-neon-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Transferencia de datos
+              </li>
+            </ul>
+          </div>
+
+          <!-- Soporte Técnico -->
+          <div class="group bg-gradient-to-br from-dark-800 to-dark-900 rounded-2xl p-8 border border-electric-purple-500/20 hover:border-electric-purple-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-electric-purple-500/20">
+            <div class="w-16 h-16 bg-gradient-to-br from-electric-purple-500 to-electric-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Soporte Técnico</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Soporte técnico especializado y mantenimiento preventivo para garantizar el óptimo funcionamiento de tus equipos.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-electric-purple-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Soporte remoto y presencial
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-electric-purple-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Mantenimiento preventivo
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-electric-purple-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                Reparaciones especializadas
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Call to Action de servicios -->
+        <div class="text-center mt-16">
+          <p class="text-gray-300 mb-6">¿No encuentras lo que buscas?</p>
+          <button class="bg-gradient-to-r from-neon-blue-500 to-electric-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-neon-blue-500/25 transform hover:scale-105 transition-all duration-300">
+            Consulta Personalizada
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección de Contacto CTA -->
+    <section id="contacto" class="py-20 bg-gradient-to-r from-neon-blue-500/10 to-electric-purple-500/10">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
+          ¿Necesitas <span class="text-neon-blue-500">Equipos IT</span>?
+        </h2>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          Cuéntanos tus necesidades tecnológicas y te ayudaremos a encontrar la solución perfecta para tu empresa.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <button class="bg-gradient-to-r from-neon-blue-500 to-electric-purple-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl hover:shadow-neon-blue-500/25 transform hover:scale-105 transition-all duration-300">
+            Solicitar Cotización
+          </button>
+          <a href="mailto:contacto@macrobyte.co" class="border-2 border-neon-blue-500 text-neon-blue-500 px-8 py-4 rounded-full font-semibold text-lg hover:bg-neon-blue-500 hover:text-white transform hover:scale-105 transition-all duration-300">
+            Enviar Email
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <Footer />
+
+  <!-- Botón flotante de WhatsApp -->
+  <WhatsAppButton />
+
+</Layout> 
