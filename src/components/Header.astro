@@ -1,0 +1,161 @@
+---
+// Componente Header: Navegación principal de la página
+// Incluye logo, menú de navegación y diseño responsivo
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-dark-900/90 backdrop-blur-md border-b border-neon-blue-500/20">
+  <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div class="flex items-center justify-between">
+      
+      <!-- Logo y nombre de la empresa -->
+      <div class="flex items-center space-x-3">
+        <div class="relative">
+          <!-- Logo con efecto glow -->
+          <div class="w-10 h-10 bg-gradient-to-br from-neon-blue-500 to-electric-pink-500 rounded-lg flex items-center justify-center animate-glow">
+            <span class="text-white font-heading font-bold text-xl">M</span>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-2xl font-heading font-bold text-white">
+            Macro<span class="text-neon-blue-500">byte</span>
+          </h1>
+          <p class="text-xs text-gray-400 hidden sm:block">Tecnología e Innovación</p>
+        </div>
+      </div>
+
+      <!-- Menú de navegación para desktop -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a 
+          href="#inicio" 
+          class="text-white hover:text-neon-blue-500 transition-colors duration-300 font-medium"
+        >
+          Inicio
+        </a>
+        <a 
+          href="#sobre-nosotros" 
+          class="text-white hover:text-neon-blue-500 transition-colors duration-300 font-medium"
+        >
+          Sobre Nosotros
+        </a>
+        <a 
+          href="#servicios" 
+          class="text-white hover:text-neon-blue-500 transition-colors duration-300 font-medium"
+        >
+          Servicios
+        </a>
+        <a 
+          href="#contacto" 
+          class="text-white hover:text-neon-blue-500 transition-colors duration-300 font-medium"
+        >
+          Contacto
+        </a>
+        
+        <!-- Botón CTA -->
+        <button class="bg-gradient-to-r from-neon-blue-500 to-electric-purple-500 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-neon-blue-500/25 transform hover:scale-105 transition-all duration-300">
+          Solicitar Cotización
+        </button>
+      </div>
+
+      <!-- Botón hamburguesa para móvil -->
+      <button 
+        id="mobile-menu-button" 
+        class="md:hidden flex flex-col space-y-1 p-2"
+        aria-label="Abrir menú de navegación"
+      >
+        <span class="w-6 h-0.5 bg-white transform transition-all duration-300 origin-center"></span>
+        <span class="w-6 h-0.5 bg-white transform transition-all duration-300 origin-center"></span>
+        <span class="w-6 h-0.5 bg-white transform transition-all duration-300 origin-center"></span>
+      </button>
+    </div>
+
+    <!-- Menú móvil -->
+    <div 
+      id="mobile-menu" 
+      class="md:hidden overflow-hidden transition-all duration-300 max-h-0"
+    >
+      <div class="py-4 space-y-4 border-t border-neon-blue-500/20 mt-4">
+        <a 
+          href="#inicio" 
+          class="block text-white hover:text-neon-blue-500 transition-colors duration-300 font-medium py-2"
+        >
+          Inicio
+        </a>
+        <a 
+          href="#sobre-nosotros" 
+          class="block text-white hover:text-neon-blue-500 transition-colors duration-300 font-medium py-2"
+        >
+          Sobre Nosotros
+        </a>
+        <a 
+          href="#servicios" 
+          class="block text-white hover:text-neon-blue-500 transition-colors duration-300 font-medium py-2"
+        >
+          Servicios
+        </a>
+        <a 
+          href="#contacto" 
+          class="block text-white hover:text-neon-blue-500 transition-colors duration-300 font-medium py-2"
+        >
+          Contacto
+        </a>
+        <button class="w-full bg-gradient-to-r from-neon-blue-500 to-electric-purple-500 text-white px-6 py-3 rounded-full font-semibold mt-4">
+          Solicitar Cotización
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Script para el menú móvil -->
+<script>
+  // Funcionalidad del menú hamburguesa
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuLines = mobileMenuButton?.querySelectorAll('span');
+    
+    let isMenuOpen = false;
+
+    mobileMenuButton?.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      
+      if (isMenuOpen) {
+        // Abrir menú
+        mobileMenu?.style.setProperty('max-height', '300px');
+        
+        // Animar hamburguesa a X
+        if (menuLines) {
+          menuLines[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+          menuLines[1].style.opacity = '0';
+          menuLines[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+        }
+      } else {
+        // Cerrar menú
+        mobileMenu?.style.setProperty('max-height', '0px');
+        
+        // Restaurar hamburguesa
+        if (menuLines) {
+          menuLines[0].style.transform = 'none';
+          menuLines[1].style.opacity = '1';
+          menuLines[2].style.transform = 'none';
+        }
+      }
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    const mobileLinks = mobileMenu?.querySelectorAll('a');
+    mobileLinks?.forEach(link => {
+      link.addEventListener('click', () => {
+        isMenuOpen = false;
+        mobileMenu?.style.setProperty('max-height', '0px');
+        
+        // Restaurar hamburguesa
+        if (menuLines) {
+          menuLines[0].style.transform = 'none';
+          menuLines[1].style.opacity = '1';
+          menuLines[2].style.transform = 'none';
+        }
+      });
+    });
+  });
+</script> 
