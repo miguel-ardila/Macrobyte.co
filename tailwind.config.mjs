@@ -4,30 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Colores personalizados para tema gamer
-        'neon-blue': {
-          50: '#e6f3ff',
-          100: '#cce7ff',
-          200: '#99cfff',
-          300: '#66b7ff',
-          400: '#339fff',
-          500: '#0087ff', // Color principal
-          600: '#006cd9',
-          700: '#0051b3',
-          800: '#00368c',
-          900: '#001b66',
-        },
-        'electric-purple': {
-          50: '#f3e8ff',
-          100: '#e9d5ff',
-          200: '#d8b4fe',
-          300: '#c084fc',
-          400: '#a855f7',
-          500: '#9333ea', // Color principal
-          600: '#7c3aed',
-          700: '#6d28d9',
-          800: '#5b21b6',
-          900: '#4c1d95',
+        // Colores personalizados para Macrobyte
+        'cyan-primary': {
+          50: '#f0fdfe',
+          100: '#ccfbfc',
+          200: '#99f6f9',
+          300: '#5eedf3',
+          400: '#17D0E3', // Color principal #17D0E3
+          500: '#0bbcd1',
+          600: '#0d96a5',
+          700: '#117886',
+          800: '#16606e',
+          900: '#165058',
         },
         'dark': {
           50: '#f7f7f7',
@@ -45,11 +33,16 @@ export default {
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
         'heading': ['Orbitron', 'monospace'],
+        'modern': ['Poppins', 'sans-serif'],
+        'elegant': ['Montserrat', 'sans-serif'],
       },
       animation: {
         'glow': 'glow 2s ease-in-out infinite alternate',
         'float': 'float 3s ease-in-out infinite',
         'slide-up': 'slideUp 0.5s ease-out',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
       },
       keyframes: {
         glow: {
