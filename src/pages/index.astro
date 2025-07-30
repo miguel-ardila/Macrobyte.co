@@ -17,53 +17,54 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
     
         <!-- Sección de Bienvenida / Hero -->
     <section id="inicio" class="min-h-screen flex items-center justify-center pt-20">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-6 items-center min-h-[80vh] lg:min-h-0">
+      <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-[5fr,7fr] gap-4 lg:gap-1 items-center min-h-[80vh] lg:min-h-0">
           
           <!-- Contenido textual -->
-          <div class="space-y-6 text-center lg:text-left flex flex-col justify-center">
+          <div class="space-y-4 text-center lg:text-left flex flex-col justify-center lg:pr-2">
             <!-- Categoría -->
-            <div class="text-cyan-primary-400 font-semibold text-sm md:text-base tracking-wide uppercase">
+            <div class="text-cyan-primary-400 font-semibold text-xs md:text-sm tracking-wide uppercase">
               SOPORTE ESPECIALIZADO
             </div>
             
             <!-- Título principal -->
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-modern font-bold text-white leading-tight">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-modern font-bold text-white leading-tight">
               EQUIPOS IT
               <br />
               <span class="text-cyan-primary-400">PROFESIONALES</span>
             </h1>
 
             <!-- Descripción -->
-            <p class="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed max-w-md mx-auto lg:mx-0">
+            <p class="text-xs md:text-sm lg:text-base text-gray-300 leading-relaxed max-w-lg mx-auto lg:mx-0">
               Somos <strong class="text-white">Macrobyte</strong>, una empresa tecnológica especializada en la venta y soporte de equipos de cómputo, servidores, periféricos y soluciones IT que impulsan el crecimiento de tu negocio.
             </p>
 
             <!-- Botón de acción -->
             <div class="pt-2">
-              <button class="bg-cyan-primary-400 text-black px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold text-sm md:text-base hover:bg-cyan-primary-300 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-primary-400/25">
+              <button class="bg-cyan-primary-400 text-black px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-xs md:text-sm hover:bg-cyan-primary-300 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-primary-400/25">
                 DESCUBRIR AHORA
               </button>
             </div>
           </div>
 
           <!-- Imagen del producto -->
-          <div class="relative flex justify-center items-center">
+          <div class="relative flex justify-center lg:justify-start items-center">
             <div class="relative">
               <img 
-                src="/assets/soporte.webp" 
-                alt="Soporte técnico especializado Macrobyte" 
-                class="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain animate-float"
-              />
-              <div class="absolute -top-4 -right-4 w-8 h-8 lg:w-12 lg:h-12 bg-cyan-primary-400/30 rounded-full animate-pulse"></div>
-              <div class="absolute -bottom-6 -left-6 w-6 h-6 lg:w-10 lg:h-10 bg-white/15 rounded-full animate-float" style="animation-delay: 1s;"></div>
+                  src="/assets/smart.webp" 
+                  alt="Soporte técnico especializado Macrobyte" 
+                  class="w-full h-auto object-contain rounded-2xl"
+                  style="min-width: 450px; max-width: 800px;"
+                />
+              <!-- <div class="absolute -top-4 -right-4 w-6 h-6 lg:w-8 lg:h-8 bg-cyan-primary-400 rounded-full animate-pulse"></div>
+              <div class="absolute -bottom-6 -left-3 w-4 h-4 lg:w-6 lg:h-6 bg-white/20 rounded-full animate-float" style="animation-delay: 1s;"></div> -->
             </div>
           </div>
 
         </div>
 
         <!-- Estadísticas -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16 pt-16 border-t border-gray-800">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-4xl mx-auto mt-16 pt-16 border-t border-gray-800">
           <div class="text-center">
             <div class="text-3xl md:text-4xl font-bold text-cyan-primary-400 mb-2">500+</div>
             <div class="text-gray-400 text-sm">Equipos Vendidos</div>
@@ -97,10 +98,10 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
         
         <!-- Título de sección -->
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-modern font-bold text-white mb-6">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-modern font-bold text-white mb-6">
             Sobre <span class="text-cyan-primary-400">Nosotros</span>
           </h2>
-          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p class="text-xs md:text-sm lg:text-base text-gray-300 max-w-3xl mx-auto">
             Con más de 10 años de experiencia, somos expertos en equipos de cómputo y soluciones tecnológicas.
           </p>
         </div>
@@ -109,15 +110,15 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
           
           <!-- Contenido textual -->
           <div class="space-y-6">
-            <h3 class="text-3xl font-bold text-white mb-4">
+            <h3 class="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-4">
               Tecnología y <span class="text-cyan-primary-400">Confianza</span>
             </h3>
             
-            <p class="text-gray-300 text-lg leading-relaxed">
+            <p class="text-gray-300 text-xs md:text-sm lg:text-base leading-relaxed">
               En <strong class="text-cyan-primary-400">Macrobyte</strong>, entendemos que el equipo tecnológico adecuado es fundamental para el éxito de cualquier empresa. Ofrecemos una amplia gama de equipos de cómputo, servidores, periféricos y soluciones IT personalizadas para cada necesidad.
             </p>
 
-            <p class="text-gray-300 text-lg leading-relaxed">
+            <p class="text-gray-300 text-xs md:text-sm lg:text-base leading-relaxed">
               Nos especializamos en brindar asesoría experta, productos de calidad y soporte técnico integral, garantizando que tu inversión tecnológica genere los mejores resultados para tu negocio.
             </p>
 
@@ -201,10 +202,10 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
         
         <!-- Título de sección -->
         <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-modern font-bold text-white mb-6">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-modern font-bold text-white mb-6">
             Nuestros <span class="text-cyan-primary-400">Productos y Servicios</span>
           </h2>
-          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p class="text-xs md:text-sm lg:text-base text-gray-300 max-w-3xl mx-auto">
             Equipos de cómputo, servidores, periféricos y soluciones IT de la más alta calidad para tu empresa.
           </p>
         </div>
@@ -219,11 +220,11 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                 <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"/>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-4">Equipos de Cómputo</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-4">Equipos de Cómputo</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed text-xs md:text-sm lg:text-base">
               Computadores de escritorio, laptops y estaciones de trabajo de las mejores marcas. Equipos para todas las necesidades y presupuestos.
             </p>
-            <ul class="space-y-2 text-sm text-gray-400">
+            <ul class="space-y-2 text-xs md:text-sm text-gray-400">
               <li class="flex items-center">
                 <svg class="w-4 h-4 text-cyan-primary-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
@@ -252,11 +253,11 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                 <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-4">Servidores</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-4">Servidores</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed text-xs md:text-sm lg:text-base">
               Servidores físicos y virtuales de alta performance. Soluciones escalables para empresas de todos los tamaños.
             </p>
-            <ul class="space-y-2 text-sm text-gray-400">
+            <ul class="space-y-2 text-xs md:text-sm text-gray-400">
               <li class="flex items-center">
                 <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
@@ -285,11 +286,11 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                 <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-4">Periféricos</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-4">Periféricos</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed text-xs md:text-sm lg:text-base">
               Monitores, teclados, ratones, impresoras y todos los accesorios necesarios para optimizar tu espacio de trabajo.
             </p>
-            <ul class="space-y-2 text-sm text-gray-400">
+            <ul class="space-y-2 text-xs md:text-sm text-gray-400">
               <li class="flex items-center">
                 <svg class="w-4 h-4 text-cyan-primary-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
@@ -318,11 +319,11 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-4">Consultoría IT</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-4">Consultoría IT</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed text-xs md:text-sm lg:text-base">
               Asesoramiento experto para seleccionar los equipos ideales según tus necesidades específicas y presupuesto.
             </p>
-            <ul class="space-y-2 text-sm text-gray-400">
+            <ul class="space-y-2 text-xs md:text-sm text-gray-400">
               <li class="flex items-center">
                 <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
@@ -351,11 +352,11 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                 <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-4">Instalación y Configuración</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-4">Instalación y Configuración</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed text-xs md:text-sm lg:text-base">
               Servicio completo de instalación, configuración y puesta en marcha de todos tus equipos tecnológicos.
             </p>
-            <ul class="space-y-2 text-sm text-gray-400">
+            <ul class="space-y-2 text-xs md:text-sm text-gray-400">
               <li class="flex items-center">
                 <svg class="w-4 h-4 text-cyan-primary-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
@@ -384,11 +385,11 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-4">Soporte Técnico</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-white mb-4">Soporte Técnico</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed text-xs md:text-sm lg:text-base">
               Soporte técnico especializado y mantenimiento preventivo para garantizar el óptimo funcionamiento de tus equipos.
             </p>
-            <ul class="space-y-2 text-sm text-gray-400">
+            <ul class="space-y-2 text-xs md:text-sm text-gray-400">
               <li class="flex items-center">
                 <svg class="w-4 h-4 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
@@ -412,36 +413,70 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
         </div>
 
-        <!-- Call to Action de servicios -->
-        <div class="text-center mt-16">
-          <p class="text-gray-300 mb-6">¿No encuentras lo que buscas?</p>
-          <button class="bg-cyan-primary-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-cyan-primary-300 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-primary-400/25">
-            Consulta Personalizada
-          </button>
+        <!-- Sección de Equipos y Accesorios -->
+        <div class="mt-20">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            
+            <!-- Contenido de texto -->
+            <div class="space-y-6">
+              <div class="space-y-4">
+                <h3 class="text-2xl md:text-3xl lg:text-4xl font-modern font-bold text-white">
+                  ¿Necesitas un <span class="text-cyan-primary-400">Equipo</span>?
+                </h3>
+                <p class="text-xs md:text-sm lg:text-base text-gray-300 leading-relaxed">
+                  Ya sea un computador de alto rendimiento, accesorios especializados o periféricos de última tecnología, 
+                  <strong class="text-white">estamos aquí para asesorarte</strong> y encontrar la solución perfecta para tus necesidades.
+                </p>
+                <div class="space-y-3 text-gray-300">
+                  <div class="flex items-center">
+                    <svg class="w-5 h-5 text-cyan-primary-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Equipos de cómputo empresarial</span>
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-5 h-5 text-cyan-primary-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Periféricos especializados</span>
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-5 h-5 text-cyan-primary-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Asesoría técnica personalizada</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pt-4">
+                <button class="bg-cyan-primary-400 text-black px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-xs md:text-sm hover:bg-cyan-primary-300 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-primary-400/25">
+                  Consulta Personalizada
+                </button>
+              </div>
+            </div>
+
+            <!-- Imagen -->
+            <div class="relative flex justify-center items-center">
+              <div class="relative">
+                <img 
+                  src="/assets/pc.webp" 
+                  alt="Periféricos y accesorios tecnológicos Macrobyte" 
+                  class="w-full max-w-lg md:max-w-xl lg:max-w-2xl h-auto object-contain rounded-2xl"
+                />
+                <!-- Efectos decorativos -->
+                <!-- <div class="absolute -top-3 -right-3 w-6 h-6 lg:w-8 lg:h-8 bg-cyan-primary-400 rounded-full animate-pulse"></div>
+                <div class="absolute -bottom-3 -left-3 w-4 h-4 lg:w-6 lg:h-6 bg-white/20 rounded-full animate-slide-up" style="animation-delay: 1s;"></div> -->
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
     </section>
 
     <!-- Sección de Contacto CTA -->
-    <section id="contacto" class="py-20 bg-gradient-to-r from-cyan-primary-400/10 to-white/5">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                  <h2 class="text-4xl md:text-5xl font-modern font-bold text-white mb-6">
-            ¿Necesitas <span class="text-cyan-primary-400">Equipos IT</span>?
-          </h2>
-        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Cuéntanos tus necesidades tecnológicas y te ayudaremos a encontrar la solución perfecta para tu empresa.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button class="bg-cyan-primary-400 text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-cyan-primary-300 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-primary-400/25">
-            Solicitar Cotización
-          </button>
-          <a href="mailto:contacto@macrobyte.co" class="border-2 border-cyan-primary-400 text-cyan-primary-400 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-cyan-primary-400 hover:text-black transform hover:scale-105 transition-all duration-300">
-            Enviar Email
-          </a>
-        </div>
-      </div>
-    </section>
 
   </main>
 
