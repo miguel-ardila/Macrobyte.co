@@ -9,6 +9,56 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
 <Layout title="Macrobyte - Tecnología e Innovación" description="Empresa líder en desarrollo de software, aplicaciones web y móviles. Transformamos ideas en soluciones tecnológicas innovadoras.">
   
+  <!-- Estilos y scripts para loading bar -->
+  <style>
+    @keyframes loadingBar {
+      0% { width: 0%; }
+      50% { width: 75%; }
+      100% { width: 100%; }
+    }
+    
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(200%); }
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const texts = [
+        'Inicializando sistemas...',
+        'Optimizando rendimiento...',
+        'Configurando hardware...',
+        'Estableciendo conexión...',
+        'Validando componentes...',
+        'Sistema listo!'
+      ];
+      
+      const textElement = document.getElementById('loading-text');
+      const percentageElement = document.getElementById('percentage');
+      let currentIndex = 0;
+      let currentPercentage = 0;
+      
+      function updateLoading() {
+        // Cambiar texto
+        if (textElement) {
+          textElement.textContent = texts[currentIndex];
+          currentIndex = (currentIndex + 1) % texts.length;
+        }
+        
+        // Actualizar porcentaje
+        if (percentageElement) {
+          currentPercentage = Math.floor(Math.random() * 101);
+          percentageElement.textContent = currentPercentage + '%';
+        }
+      }
+      
+      // Actualizar cada 2 segundos
+      updateLoading();
+      setInterval(updateLoading, 2000);
+    });
+  </script>
+
   <!-- Header con navegación -->
   <Header />
 
@@ -39,16 +89,38 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
               Somos <strong class="text-white">Macrobyte</strong>, una empresa tecnológica especializada en la venta y soporte de equipos de cómputo, servidores, periféricos y soluciones IT que impulsan el crecimiento de tu negocio.
             </p>
 
-            <!-- Botón de acción -->
-            <div class="pt-2">
-              <button class="bg-cyan-primary-400 text-black px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-xs md:text-sm hover:bg-cyan-primary-300 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-primary-400/25">
-                DESCUBRIR AHORA
-              </button>
+            <!-- Loading Bar Infinito -->
+            <div class="pt-6 max-w-xs">
+              <!-- Texto dinámico -->
+              <div class="mb-3">
+                <p id="loading-text" class="text-xs text-gray-300 font-mono tracking-wide">Optimizando rendimiento...</p>
+              </div>
+              
+              <!-- Barra de progreso -->
+              <div class="relative">
+                <!-- Fondo de la barra -->
+                <div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden border border-gray-700">
+                  <!-- Barra animada -->
+                  <div class="h-full bg-gradient-to-r from-cyan-primary-400 via-purple-800 to-cyan-primary-400 rounded-full" 
+                       style="animation: loadingBar 3s ease-in-out infinite;">
+                  </div>
+                </div>
+                
+                <!-- Porcentaje -->
+                <div class="flex justify-between items-center mt-2">
+                  <span id="percentage" class="text-xs font-mono text-cyan-primary-400">0%</span>
+                  <div class="flex space-x-1">
+                    <div class="w-1 h-1 bg-cyan-primary-400 rounded-full animate-ping"></div>
+                    <div class="w-1 h-1 bg-purple-800 rounded-full animate-ping" style="animation-delay: 0.5s;"></div>
+                    <div class="w-1 h-1 bg-cyan-primary-400 rounded-full animate-ping" style="animation-delay: 1s;"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Imagen del producto -->
-          <div class="relative flex justify-center lg:justify-start items-center">
+          <div class="relative flex justify-center lg:justify-center items-center lg:pl-8">
             <div class="relative">
               <img 
                   src="/assets/smart.webp" 
@@ -450,9 +522,9 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
               </div>
               
               <div class="pt-4">
-                <button class="bg-cyan-primary-400 text-black px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-xs md:text-sm hover:bg-cyan-primary-300 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-primary-400/25">
+                <a href="https://wa.me/573162375512?text=¡Hola%20Macrobyte!%20🤔%20Tengo%20algunas%20preguntas%20sobre%20equipos%20y%20necesito%20asesoría%20técnica.%20¿Están%20disponibles?" target="_blank" rel="noopener noreferrer" class="inline-block border-2 border-cyan-primary-400 text-cyan-primary-400 px-5 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-xs md:text-sm hover:bg-cyan-primary-400 hover:text-black transform hover:scale-105 transition-all duration-300">
                   Consulta Personalizada
-                </button>
+                </a>
               </div>
             </div>
 
