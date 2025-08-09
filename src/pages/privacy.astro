@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const title = 'Política de Privacidad — Macrobyte';
+const description = 'Cómo Macrobyte S.A.S. recopila, usa y protege tus datos personales. Derechos, cookies y contacto.';
+---
+
+<Layout title={title} description={description}>
+  <Header />
+
+  <main class="pt-32 md:pt-40 pb-20">
+    <section class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <header class="mb-8">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-modern font-bold text-white">
+          Política de Privacidad — <span class="text-cyan-primary-400">Macrobyte</span>
+        </h1>
+        <p class="text-gray-400 text-sm mt-2">Fecha de entrada en vigor: 09 de agosto de 2025</p>
+      </header>
+
+      <div class="space-y-8 text-gray-300 text-sm md:text-base leading-relaxed">
+        <p>
+          En Macrobyte S.A.S. valoramos y protegemos la privacidad de nuestros clientes, visitantes y usuarios. Esta Política de Privacidad describe 
+          cómo recopilamos, utilizamos y protegemos la información personal que nos proporcionas al usar nuestro sitio web o contratar nuestros servicios.
+        </p>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">1. Información que recopilamos</h2>
+          <p class="mb-3">Podemos recopilar los siguientes datos:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><span class="text-white font-medium">Datos de contacto:</span> nombre, correo electrónico, número de teléfono, dirección.</li>
+            <li><span class="text-white font-medium">Datos de facturación:</span> NIT, información de pago.</li>
+            <li><span class="text-white font-medium">Datos técnicos:</span> dirección IP, tipo de navegador, sistema operativo, páginas visitadas (a través de cookies y herramientas de análisis web).</li>
+            <li><span class="text-white font-medium">Información de soporte técnico:</span> datos sobre tu equipo o red para brindar asistencia.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">2. Uso de la información</h2>
+          <p class="mb-3">Utilizamos tu información para:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Procesar pedidos y prestar servicios.</li>
+            <li>Brindar soporte técnico y atención al cliente.</li>
+            <li>Enviar actualizaciones, facturas y comunicaciones relacionadas con el servicio.</li>
+            <li>Cumplir con obligaciones legales.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">3. Compartición de datos</h2>
+          <p class="mb-3">Podemos compartir datos únicamente con:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Proveedores de servicios tecnológicos (hosting, pasarelas de pago, mensajería).</li>
+            <li>Autoridades competentes cuando sea requerido por ley.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">4. Protección de la información</h2>
+          <p>
+            Implementamos medidas técnicas, administrativas y físicas para proteger tus datos frente a accesos no autorizados, pérdida o divulgación indebida.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">5. Derechos del titular</h2>
+          <p class="mb-3">De acuerdo con la Ley 1581 de 2012, tienes derecho a:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-3">
+            <li>Conocer, actualizar y rectificar tu información.</li>
+            <li>Solicitar la supresión de tus datos.</li>
+            <li>Revocar tu consentimiento para el tratamiento.</li>
+          </ul>
+          <p>
+            Puedes ejercer estos derechos escribiendo a: <a href="mailto:contacto@macrobyte.co" class="text-cyan-primary-400 hover:text-white">contacto@macrobyte.co</a>
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">6. Uso de cookies</h2>
+          <p>
+            Este sitio utiliza cookies para mejorar tu experiencia y analizar el uso del sitio. Puedes desactivarlas desde la configuración de tu navegador.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">7. Cambios en esta política</h2>
+          <p>
+            Podremos actualizar esta política en cualquier momento. Publicaremos la versión más reciente en nuestro sitio web.
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+  <WhatsAppButton />
+</Layout>
+
+
