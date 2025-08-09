@@ -1,0 +1,60 @@
+---
+// Carrusel/marquee infinito de logos de marcas
+// Lee la lista de archivos desde src/data/brands.json (generado a partir de /public/marcas)
+import brands from '@/data/brands.json';
+
+const brandList: string[] = (brands as unknown as string[]);
+const labelFrom = (fileName: string): string => fileName.replace(/[-_]/g, ' ').replace(/\.svg$/i, '');
+---
+
+<section class="relative py-10">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative overflow-hidden mask-edges" aria-label="Carrusel de marcas aliadas">
+      <div class="marquee-track flex items-center gap-16 will-change-transform">
+        {brandList.map((name) => (
+          <img
+            src={`/brands/${name}`}
+            alt={labelFrom(name)}
+            class="h-8 md:h-10 w-auto filter-brand"
+            loading="lazy"
+            decoding="async"
+          />
+        ))}
+        {brandList.map((name) => (
+          <img
+            src={`/brands/${name}`}
+            alt={labelFrom(name)}
+            class="h-8 md:h-10 w-auto filter-brand"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* Desvanecido en los extremos usando máscara (no altera el fondo) */
+    .mask-edges {
+      -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+              mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+      -webkit-mask-size: 100% 100%;
+              mask-size: 100% 100%;
+    }
+    .marquee-track {
+      width: max-content;
+      animation: marquee-x 50s linear infinite;
+    }
+    @keyframes marquee-x {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+    /* Apariencia gris consistente a partir de logos oscuros/claro-oscuro */
+    .filter-brand {
+      filter: brightness(0) invert(0.82);
+    }
+  </style>
+</section>
+
+
