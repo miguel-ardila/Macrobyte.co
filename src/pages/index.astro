@@ -5,9 +5,13 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { Image } from 'astro:assets';
+import smartImg from '../assets/smart.webp';
+import pcImg from '../assets/pc.webp';
+import MarcasMarquee from '@/components/MarcasMarquee.astro';
 ---
 
-<Layout title="Macrobyte - Tecnología e Innovación" description="Empresa líder en desarrollo de software, aplicaciones web y móviles. Transformamos ideas en soluciones tecnológicas innovadoras.">
+<Layout title="Macrobyte - Tecnología e Innovación" description="Somosuna empresa tecnológica especializada en la venta y soporte de equipos de cómputo, servidores, periféricos y soluciones IT que impulsan el crecimiento de tu negocio.">
   
   <!-- Estilos y scripts para loading bar -->
   <style>
@@ -122,12 +126,15 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
           <!-- Imagen del producto -->
           <div class="relative flex justify-center lg:justify-center items-center lg:pl-8">
             <div class="relative">
-              <img 
-                  src="/assets/smart.webp" 
-                  alt="Soporte técnico especializado Macrobyte" 
-                  class="w-full h-auto object-contain rounded-2xl"
-                  style="min-width: 450px; max-width: 800px;"
-                />
+              <Image
+                src={smartImg}
+                alt="Soporte técnico especializado Macrobyte"
+                widths={[480, 768, 1024, 1280]}
+                sizes="(min-width: 1024px) 800px, 90vw"
+                loading="eager"
+                fetchpriority="high"
+                class="w-full h-auto object-contain rounded-2xl min-w-[450px] max-w-[800px]"
+              />
               <!-- <div class="absolute -top-4 -right-4 w-6 h-6 lg:w-8 lg:h-8 bg-cyan-primary-400 rounded-full animate-pulse"></div>
               <div class="absolute -bottom-6 -left-3 w-4 h-4 lg:w-6 lg:h-6 bg-white/20 rounded-full animate-float" style="animation-delay: 1s;"></div> -->
             </div>
@@ -163,6 +170,8 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
         </svg>
       </div>
     </section>
+
+    
 
     <!-- Sección Sobre Nosotros -->
     <section id="sobre-nosotros" class="py-20 bg-gradient-to-b from-transparent to-dark-800/50">
@@ -484,6 +493,15 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
           </div>
 
         </div>
+        <!-- Sección: Nuestros aliados tecnológicos (Marcas) -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-modern font-bold text-white mb-8">
+          Nuestros <span class="text-cyan-primary-400">aliados tecnológicos</span>
+        </h2>
+      </div>
+      <MarcasMarquee />
+    </section>
 
         <!-- Sección de Equipos y Accesorios -->
         <div class="mt-20">
@@ -531,9 +549,11 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
             <!-- Imagen -->
             <div class="relative flex justify-center items-center">
               <div class="relative">
-                <img 
-                  src="/assets/pc.webp" 
-                  alt="Periféricos y accesorios tecnológicos Macrobyte" 
+                <Image
+                  src={pcImg}
+                  alt="Periféricos y accesorios tecnológicos Macrobyte"
+                  widths={[480, 768, 1024, 1280]}
+                  sizes="(min-width: 1024px) 700px, 90vw"
                   class="w-full max-w-lg md:max-w-xl lg:max-w-2xl h-auto object-contain rounded-2xl"
                 />
                 <!-- Efectos decorativos -->
