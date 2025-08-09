@@ -1,0 +1,102 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const title = 'Términos de Servicio — Macrobyte';
+const description = 'Condiciones de uso del sitio y contratación de servicios de Macrobyte S.A.S. Precios, pagos, garantías, responsabilidad y jurisdicción.';
+---
+
+<Layout title={title} description={description}>
+  <Header />
+
+  <main class="pt-32 md:pt-40 pb-20">
+    <section class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+      <header class="mb-8">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-modern font-bold text-white">
+          Términos de Servicio — <span class="text-cyan-primary-400">Macrobyte</span>
+        </h1>
+        <p class="text-gray-400 text-sm mt-2">Fecha de entrada en vigor: 09 de agosto de 2025</p>
+      </header>
+
+      <div class="space-y-8 text-gray-300 text-sm md:text-base leading-relaxed">
+        <p>
+          Estos Términos de Servicio regulan el acceso y uso del sitio web de Macrobyte S.A.S. y la contratación de nuestros productos y servicios. 
+          Al acceder a este sitio o contratar nuestros servicios, aceptas estas condiciones.
+        </p>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">1. Objeto</h2>
+          <p>
+            Macrobyte es una empresa tecnológica dedicada a la venta de equipos de cómputo, servidores, periféricos y a la prestación de servicios de soporte técnico y soluciones IT.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">2. Uso del sitio</h2>
+          <p class="mb-3">El usuario se compromete a:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>No realizar actividades ilícitas o que vulneren derechos de terceros.</li>
+            <li>Proporcionar información veraz y actualizada al momento de registrarse o contratar servicios.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">3. Precios y pagos</h2>
+          <p class="mb-3">
+            Todos los precios están expresados en pesos colombianos (COP) e incluyen impuestos, salvo indicación contraria.
+          </p>
+          <p>
+            Los pagos deben realizarse a través de los métodos autorizados por Macrobyte.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">4. Garantías y devoluciones</h2>
+          <p class="mb-3">
+            Los productos cuentan con garantía según las condiciones del fabricante y la normativa vigente.
+          </p>
+          <p>
+            El cliente debe presentar la factura y cumplir los requisitos indicados para hacer efectiva la garantía.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">5. Limitación de responsabilidad</h2>
+          <p class="mb-3">Macrobyte no se hace responsable por:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Fallos en el servicio derivados de causas de fuerza mayor.</li>
+            <li>Pérdida de información por uso indebido del usuario.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">6. Propiedad intelectual</h2>
+          <p>
+            Todos los contenidos del sitio (textos, imágenes, logotipos, código) son propiedad de Macrobyte o se usan con autorización y están protegidos por la legislación aplicable.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">7. Ley aplicable y jurisdicción</h2>
+          <p>
+            Estos términos se rigen por las leyes de la República de Colombia. Cualquier disputa será resuelta ante los jueces y tribunales competentes de la ciudad de Bogotá D.C.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl md:text-2xl font-semibold text-white mb-3">8. Modificaciones</h2>
+          <p>
+            Macrobyte podrá modificar estos términos en cualquier momento. Las modificaciones se publicarán en este sitio web y entrarán en vigor de inmediato.
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+  <WhatsAppButton />
+</Layout>
+
+
