@@ -1,10 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+  <!-- Generator: Adobe Illustrator 29.7.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 8)  -->
   <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0087ff"/>
-      <stop offset="100%" style="stop-color:#ff55aa"/>
+    <style>
+      .st0 {
+        fill: url(#Degradado_sin_nombre_19);
+      }
+
+      .st1 {
+        fill: #fff;
+        font-family: Arial-BoldMT, Arial;
+        font-size: 20px;
+        font-weight: 700;
+        isolation: isolate;
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_19" data-name="Degradado sin nombre 19" x1="-913.53" y1="540.66" x2="-912.53" y2="539.66" gradientTransform="translate(29233 17301) scale(32 -32)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0087ff"/>
+      <stop offset=".03" stop-color="#0379e0"/>
+      <stop offset=".07" stop-color="#0965b7"/>
+      <stop offset=".12" stop-color="#0d5492"/>
+      <stop offset=".18" stop-color="#114571"/>
+      <stop offset=".24" stop-color="#153856"/>
+      <stop offset=".3" stop-color="#182e40"/>
+      <stop offset=".38" stop-color="#1a262f"/>
+      <stop offset=".48" stop-color="#1b2123"/>
+      <stop offset=".62" stop-color="#1c1d1c"/>
+      <stop offset="1" stop-color="#1d1d1b"/>
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="8" fill="url(#gradient)"/>
-  <text x="16" y="22" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="20">M</text>
-</svg> 
+  <rect class="st0" width="32" height="32" rx="8" ry="8"/>
+  <text class="st1" transform="translate(7.67 23.01)"><tspan x="0" y="0">M</tspan></text>
+</svg>
